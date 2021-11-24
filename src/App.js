@@ -1,5 +1,4 @@
 import React from 'react'
-import "tailwindcss/tailwind.css"
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -9,7 +8,7 @@ import Contact from './components/Contact'
 
 const App = () => {
   return (
-    <div className="text-gray-400 bg-gray-900 body-font">
+    <div>
       <Navbar />
       <About />
       <Projects />
