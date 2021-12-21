@@ -1,11 +1,13 @@
 # Steps to install TaiwindCSS
 
 ### Tailwind official docs
-You can familiarise yourself with Tailwind on their [Official website](https://tailwindcss.com/). If you want now more about Tailwind React Setup you can find it [here](https://tailwindcss.com/docs/guides/create-react-app).
+You can familiarise yourself with Tailwind on their [Official website](https://tailwindcss.com/). If you want to know more about Tailwind React Setup you can find it [here](https://tailwindcss.com/docs/guides/create-react-app).
 
 ### To install Tailwind with Create React App please follow steps below:
 1. Create React App with `npx create-react-app my-app`
-2. Installing Tailwind dependencies with `npm install -D tailwindcss postcss autoprefixer` or `npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9` or `npm install tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9`
+2. Installing Tailwind dependencies with `npm install -D tailwindcss postcss autoprefixer` 
+or `npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9` 
+or `npm install -D tailwindcss@latest postcss@latest autoprefixer@latest`
 3. Then, to override the naitive post CSS configuration install package named CRACO `npm i @craco/craco`.
 4. Use CRACO to to replace react scripts in the package.json
 ```
@@ -29,6 +31,15 @@ module.exports = {
   },
 };
 ```
+6. Run the `npx tailwindcss init -p` or `npx tailwindcss-cli@latest init -p` command to generate `tailwind.config.js` file in the root of the project.
+7. And finally we go into our `index.css` file and use the Tailwind directive to include the actual Tailwind styles in our project
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+8. Run `npm start` to check if everything installed correctly.
+
 
 
 # Getting Started with Create React App
