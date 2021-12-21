@@ -1,3 +1,36 @@
+# Steps to install TaiwindCSS
+
+### Tailwind official docs
+You can familiarise yourself with Tailwind on their [Official website](https://tailwindcss.com/). If you want now more about Tailwind React Setup you can find it [here](https://tailwindcss.com/docs/guides/create-react-app).
+
+### To install Tailwind with Create React App please follow steps below:
+1. Create React App with `npx create-react-app my-app`
+2. Installing Tailwind dependencies with `npm install -D tailwindcss postcss autoprefixer` or `npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9` or `npm install tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9`
+3. Then, to override the naitive post CSS configuration install package named CRACO `npm i @craco/craco`.
+4. Use CRACO to to replace react scripts in the package.json
+```
+"scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+```
+5. Create CRACO config file `craco.config.js` to apply Tailwind pluggin
+```
+module.exports = {
+  style: {
+    postcss: { 
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
+    },
+  },
+};
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
