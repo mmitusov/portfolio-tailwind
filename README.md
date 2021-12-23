@@ -9,6 +9,7 @@ You can familiarise yourself with Tailwind on their [Official website](https://t
 or `npm install -D tailwindcss@latest postcss@latest autoprefixer@latest` 
 or `npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9` command
 3. Then, to override the naitive post CSS configuration install package named CRACO `npm i @craco/craco`.
+3.1. If you've got dependency or version error while installing CRACO, set your react-scripts version to `"react-scripts": "^4.0.0"`. Because some versions of CRACO work only with older react-scripts versions. 
 4. Use CRACO to to replace react scripts in the package.json
 ```
 "scripts": {
