@@ -9,8 +9,8 @@ You can familiarise yourself with Tailwind on their [Official website](https://t
 or `npm install -D tailwindcss@latest postcss@latest autoprefixer@latest` 
 or `npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9` command
 3. Then, to override the naitive post CSS configuration install package named CRACO `npm i @craco/craco`.
-3. If you've got dependency or version error while installing CRACO, set your react-scripts version to `"react-scripts": "^4.0.0"`. Because some versions of CRACO work only with older react-scripts versions. 
-4. Use CRACO to to replace react scripts in the package.json
+4. If you've got dependency or version error while installing CRACO, set your react-scripts version to `"react-scripts": "^4.0.0"` in your `package.json` file. Because some versions of CRACO work only with older react-scripts versions. 
+5. Use CRACO to to replace react scripts in the package.json
 ```
 "scripts": {
     "start": "craco start",
@@ -19,7 +19,7 @@ or `npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autop
     "eject": "react-scripts eject"
   },
 ```
-5. Create CRACO config file `craco.config.js` to apply Tailwind pluggin
+6. Create CRACO config file `craco.config.js` to apply Tailwind pluggin
 ```
 module.exports = {
   style: {
@@ -32,14 +32,14 @@ module.exports = {
   },
 };
 ```
-6. Run the `npx tailwindcss init -p` or `npx tailwindcss-cli@latest init -p` command to generate `tailwind.config.js` file in the root of the project.
-7. And finally we go into our `index.css` file and use the Tailwind directive to include the actual Tailwind styles in our project
+7. Run the `npx tailwindcss init -p` or `npx tailwindcss-cli@latest init -p` command to generate `tailwind.config.js` file in the root of the project.
+8. And finally we go into our `index.css` file and use the Tailwind directive to include the actual Tailwind styles in our project
 ```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
-8. Run `npm start` to check if everything installed correctly.
+9. Run `npm start` to check if everything installed correctly.
 
 **P.S. In Tailwind you can enable just-in-time mode, that will compile your CSS on the fly making your build times much faster. To enable just-in-time mode, set the `mode` option to `'jit'` in your `tailwind.config.js` file:**
 ```
