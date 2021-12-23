@@ -40,6 +40,17 @@ module.exports = {
 ```
 8. Run `npm start` to check if everything installed correctly.
 
+**P.S. In Tailwind you can enable just-in-time mode, that will compile your CSS on the fly making your build times much faster. To enable just-in-time mode, set the `mode` option to `'jit'` in your `tailwind.config.js` file:**
+```
+module.exports = {
+  mode: 'jit',
+  content: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
 
 
 # Getting Started with Create React App
