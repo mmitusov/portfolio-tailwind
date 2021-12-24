@@ -41,12 +41,16 @@ module.exports = {
 ```
 9. Run `npm start` to check if everything installed correctly.
 
-**P.S. In Tailwind you can enable just-in-time mode, that will compile your CSS on the fly making your build times much faster. To enable just-in-time mode, set the `mode` option to `'jit'` in your `tailwind.config.js` file:**
+**P.S. In Tailwind you can enable just-in-time mode, that will compile your CSS on the fly making your build times much faster. However this option might not work on the older versions of Tailwind. So if your Tailwind clasess does not apply simply remove this mode/do not install it. To enable just-in-time mode, set the `mode` option to `'jit'` in your `tailwind.config.js` file:**
 ```
 module.exports = {
   mode: 'jit',
-  content: [],
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {},
+  },
+  variants: {
     extend: {},
   },
   plugins: [],
