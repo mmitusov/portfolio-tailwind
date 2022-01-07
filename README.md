@@ -1,7 +1,7 @@
 # Steps to install TaiwindCSS
 
 ### Tailwind official docs
-You can familiarise yourself with Tailwind on their [Official website](https://tailwindcss.com/). If you want to know more about Tailwind React Setup you can find it [here](https://tailwindcss.com/docs/guides/create-react-app).
+You can familiarise yourself with Tailwind on their [Official website](https://tailwindcss.com/). If you want to know more about Tailwind React Setup you can find it [here](https://tailwindcss.com/docs/guides/create-react-app), or for older versions [here](https://v2.tailwindcss.com/docs/guides/create-react-app).
 
 ### To install Tailwind with Create React App please follow steps below:
 1. Create React App with `npx create-react-app my-app`
@@ -39,7 +39,7 @@ module.exports = {
 @tailwind components;
 @tailwind utilities;
 ```
-9. Run `npm start` to check if everything installed correctly.
+9. Run `npm start` to check if everything installed correctly. 
 
 **P.S. In Tailwind you can enable just-in-time mode, that will compile your CSS on the fly making your build times much faster. However this option might not work on the older versions of Tailwind. So if your Tailwind clasess does not apply simply remove this mode/do not install it. To enable just-in-time mode, set the `mode` option to `'jit'` in your `tailwind.config.js` file:**
 ```
