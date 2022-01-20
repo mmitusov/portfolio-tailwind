@@ -4,7 +4,7 @@
 You can familiarise yourself with Tailwind on their [Official website](https://tailwindcss.com/). If you want to know more about Tailwind React Setup you can find it [here](https://tailwindcss.com/docs/guides/create-react-app), or for older versions [here](https://v2.tailwindcss.com/docs/guides/create-react-app).
 
 ### To install Tailwind with Create React App V5 or higher please follow steps below:
-Since V5 `npx create-react-app` finaly has support for TilwindCSS, amount of steps for its instalation have been [here](https://tailwindcss.com/docs/guides/create-react-app)
+Since V5 `npx create-react-app` finaly has support for TilwindCSS, amount of steps for its installation has been significantly reduced. [here](https://tailwindcss.com/docs/guides/create-react-app)
 
 
 ### To install Tailwind with Create React App V4 or lover please follow steps below:
