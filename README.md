@@ -1,4 +1,4 @@
-# Steps to install TaiwindCSS  
+# Steps to install TaiwindCSS    
 
 ### Tailwind official docs
 You can familiarise yourself with Tailwind on their [Official website](https://tailwindcss.com/). If you want to know more about Tailwind React Setup you can find it [here](https://tailwindcss.com/docs/guides/create-react-app), or for older versions [here](https://v2.tailwindcss.com/docs/guides/create-react-app).
